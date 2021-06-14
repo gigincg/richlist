@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook,Instagram,Twitter } from './App/AppIcons';
+import { Facebook,Instagram,Twitter } from './AppIcons';
 
 const social = [
     {
