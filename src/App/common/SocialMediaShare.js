@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook,Instagram,Twitter } from './AppIcons';
+import { Facebook, Instagram, Twitter } from './AppIcons';
 
 const social = [
     {
@@ -19,11 +19,13 @@ const social = [
     },
 ];
 
-export default function SocialMediaShare({ className = "", color ="#a58b47"}){
+export default function SocialMediaShare({ className = "", color = "#a58b47" }) {
 
-    return(
-        <div className={"flex flex-col gap-1 justify-center items-center "+className}>
-            <h1 className="text-sm" style={{ color: color }}>Share your results:</h1>
+    return (
+        <div className={"flex flex-col gap-1 justify-center items-center " + className}>
+            <h1 className="text-sm" style={{ color: color }}>
+                Share your results:
+            </h1>
             <div className="flex flex-row gap-2">
                 {
                     social.map((item) => (
@@ -34,7 +36,7 @@ export default function SocialMediaShare({ className = "", color ="#a58b47"}){
                             className="text-white p-2 rounded-full hover:text-yellow-400"
                         >
                             <span className="sr-only">{item.name}</span>
-                            <item.icon className="h-6 w-6"/>
+                            <item.icon className="h-6 w-6" />
                         </a>
                     ))
                 }
