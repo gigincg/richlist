@@ -48,7 +48,7 @@ export default function TimeToBuyCola({ timeToBuyColaYou, timeToBuyColaZimbabwe,
                             <Cola className="h-36 object-adjust" />
                             <div className="text-2xl opacity-80 font-bold"
                                 style={{ color: "#b79d59" }}>
-                                {("0" + ((element.value / 60).toFixed(0))).slice(-2)}:{("0" + ((element.value % 60).toFixed(0))).slice(-2)}:00
+                                {("0" + ((""+(element.value / 60)).split(".")[0])).slice(-2)}:{("0" + ((element.value % 60).toFixed(0))).slice(-2)}:00
                             </div>
                         </div>
                     </div>
